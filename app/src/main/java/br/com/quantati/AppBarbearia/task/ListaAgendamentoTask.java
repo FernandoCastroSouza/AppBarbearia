@@ -14,16 +14,16 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.List;
 
+import br.com.quantati.AppBarbearia.MainActivity;
 import br.com.quantati.AppBarbearia.converter.AgendamentoConverter;
 import br.com.quantati.AppBarbearia.dao.AgendamentoDAO;
-import br.com.quantati.AppBarbearia.ws.WebRequest;
-import br.com.quantati.AppBarbearia.MainActivity;
 import br.com.quantati.AppBarbearia.model.Agendamento;
 import br.com.quantati.AppBarbearia.util.ImageUtil;
+import br.com.quantati.AppBarbearia.ws.WebRequest;
 
 
 /**
- * Created by carlos on 05/11/2015.
+ * Created by Fernando on 12/06/2017.
  */
 public class ListaAgendamentoTask extends AsyncTask<String, Object, Boolean> {
     private final MainActivity activity;
@@ -69,6 +69,9 @@ public class ListaAgendamentoTask extends AsyncTask<String, Object, Boolean> {
                         agendamento.setImporting(true);
                         if (agendamento.getFotoAntes() != null && !agendamento.getFotoAntes().equals("")) {
                             ImageUtil.saveImage(agendamento.getFotoAntes(), agendamento.getFotoAntes());
+                        }
+                        if (agendamento.getFotoDepois() != null && !agendamento.getFotoDepois().equals("")) {
+                            ImageUtil.saveImage(agendamento.getFotoDepois(), agendamento.getFotoDepois());
                         }
                         dao.insert(agendamento);
                     } else {

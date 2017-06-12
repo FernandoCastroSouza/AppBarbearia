@@ -14,7 +14,7 @@ import br.com.quantati.AppBarbearia.ws.WebRequest;
 
 
 /**
- * Created by carlos on 05/11/2015.
+ * Created by Fernando on 12/06/2017.
  */
 public class DeleteAgendamentoTask extends AsyncTask<String, Object, Boolean> {
     private static final String QTDE = "qtde";

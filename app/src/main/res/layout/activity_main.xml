@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.quantati.barbearia.br.com.quantati.AppBarbearia.MainActivity">
+    tools:context="br.com.quantati.AppBarbearia.MainActivity">
 
     <ListView
         android:id="@+id/listaAgendamento"

@@ -1,7 +1,7 @@
 package br.com.quantati.AppBarbearia.util;
 
 /**
- * Created by carlos on 6/3/15.
+ * Created by Fernando on 12/06/2017.
  */
 import android.content.ContentUris;
 import android.content.Context;

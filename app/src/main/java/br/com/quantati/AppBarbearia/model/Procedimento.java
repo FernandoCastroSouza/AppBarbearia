@@ -1,7 +1,7 @@
 package br.com.quantati.AppBarbearia.model;
 
 /**
- * Created by carlos on 29/05/17.
+ * Created by Fernando on 12/06/2017.
  */
 
 public enum Procedimento {

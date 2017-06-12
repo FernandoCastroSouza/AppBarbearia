@@ -33,7 +33,7 @@ import br.com.quantati.AppBarbearia.model.Procedimento;
 
 
 /**
- * Created by Carlos on 29/05/2017.
+ * Created by Fernando on 12/06/2017.
  */
 
 public class AgendamentoHelper {
@@ -110,7 +110,6 @@ public class AgendamentoHelper {
                     }
                     dao.close();
                     new SaveAgendamentoTask(activity, agendamento).execute();
-                    activity.finish();
                 }
             }
         });

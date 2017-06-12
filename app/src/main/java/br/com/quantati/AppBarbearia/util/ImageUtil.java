@@ -11,7 +11,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.FileOutputStream;
 
 /**
- * Created by carlos on 12/04/17.
+ * Created by Fernando on 12/06/2017.
  */
 
 public class ImageUtil {

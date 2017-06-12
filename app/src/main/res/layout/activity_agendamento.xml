@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,17 +12,18 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="200dp">
+
             <com.daimajia.slider.library.SliderLayout
                 android:id="@+id/sliderFotos"
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:src="@drawable/person"/>
+                android:src="@drawable/person" />
 
             <com.daimajia.slider.library.Indicators.PagerIndicator
                 android:id="@+id/custom_indicator"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"/>
+                android:gravity="center" />
 
             <Button
                 android:id="@+id/formFotoButton"
@@ -35,65 +37,77 @@
                 android:elevation="5dp"
                 android:gravity="center"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
         </RelativeLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <br.com.quantati.AppBarbearia.component.UbuntuBoldTextView
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nome:"/>
+                android:text="Nome:" />
+
             <EditText
+                android:id="@+id/edtNome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/edtNome"/>
+                android:inputType="textPersonName|textCapSentences" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <br.com.quantati.AppBarbearia.component.UbuntuBoldTextView
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Telefone:"/>
+                android:text="Telefone:" />
+
             <EditText
+                android:id="@+id/edtTelefone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/edtTelefone"/>
+                android:inputType="phone" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <br.com.quantati.AppBarbearia.component.UbuntuBoldTextView
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Data/Hora:"/>
+                android:text="Data/Hora:" />
+
             <EditText
+                android:id="@+id/edtDataHora"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/edtDataHora"/>
+                android:focusable="false" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <br.com.quantati.AppBarbearia.component.UbuntuBoldTextView
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Procedimento:"/>
+                android:text="Procedimento:" />
+
             <Spinner
+                android:id="@+id/spinnerProcedimento"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/spinnerProcedimento"/>
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
         <Button
+            android:id="@+id/btnSalvarAgendamento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btnSalvarAgendamento"
-            android:text="Agendar"/>
+            android:text="Agendar" />
 
     </LinearLayout>
 </LinearLayout>

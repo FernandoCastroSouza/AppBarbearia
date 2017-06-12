@@ -16,7 +16,7 @@ import br.com.quantati.AppBarbearia.model.Agendamento;
 import br.com.quantati.AppBarbearia.model.Procedimento;
 
 /**
- * Created by carlos on 29/05/17.
+ * Created by Fernando on 12/06/2017.
  */
 
 public class AgendamentoDAO extends SQLiteOpenHelper {

@@ -12,7 +12,7 @@ import br.com.quantati.AppBarbearia.model.Agendamento;
 
 
 /**
- * Created by carlos on 05/11/2015.
+ * Created by Fernando on 12/06/2017.
  */
 public class AgendamentoConverter {
 

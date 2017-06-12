@@ -23,7 +23,7 @@ import br.com.quantati.barbearia.R;
 import br.com.quantati.AppBarbearia.util.ImageFilePath;
 
 /**
- * Created by Carlos on 29/05/2017.
+ * Created by Fernando on 12/06/2017.
  */
 
 public class AgendamentoActivity extends AppCompatActivity
